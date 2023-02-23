@@ -1,0 +1,27 @@
+{
+  "name": "loki-wait",
+  "version": "1.0.1",
+  "description": "Pino Loki waiting system",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/golostos/loki-wait.git"
+  },
+  "scripts": {
+    "precommit": "npm version patch --no-git-tag-version && git add package.json",
+    "postcommit": "npm publish",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "Pino",
+    "Loki"
+  ],
+  "author": "Alexander Dmitriev",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}
